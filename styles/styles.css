@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Pretendard;
+}
+
+body {
+	background-color: lightslategray;
+	color: #fff;
+}
+
+button {
+    color: inherit;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+#app {
+    padding: 1rem 0;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --btn-height: 3rem;
+    height: var(--btn-height);
+    gap: 0.25rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    color: black;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    color: white;
+    background-color: rgb(47, 79, 79);
+}
+
+.btn-primary:hover {
+    background-color: rgb(42, 71, 71);
+}
+
+.btn-primary:active {
+    background-color: rgb(37, 63, 63);
+}
+
+.btn-sm {
+    --btn-height: 2rem;
+    font-size: 0.875rem;
+    padding: 0 0.75rem;
+}
+
+.btn-circle {
+    width: var(--btn-height);
+    padding: 0;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 1rem;
+}
+
+.todo-list-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#create-todo-btn {
+    font-size: 1.125rem;
+}
+
+main {
+	min-height: 100vh;
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 1.5rem;
+}
+
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.5rem;
+    min-height: 4rem;
+    border: 2px solid transparent;
+    padding: 0 1rem;
+    background-color: lightgray;
+}
+
+.todo-item:hover {
+    border-color: white;
+}
+
+.todo-item-complete {
+    opacity: 0.5;
+}
+
+.todo-item-actions {
+    display: flex;
+    align-items:center;
+    flex-wrap: nowrap;
+}
+
+.todo-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    height: 2rem;
+    font-size: 1rem;
+    color: black;
+    padding: 0 0.5rem;
+    text-overflow: ellipsis;
+}
+
+.todo-content:disabled {
+    color: black;
+}
+
+.todo-item-complete .todo-content:not(:focus) {
+    text-decoration: line-through;
+}
+
+
+
+
