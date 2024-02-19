@@ -1,9 +1,11 @@
 import { Todo } from "./Todo.js";
 import { TodoListItem } from "./TodoListItem.js";
+import { EventEmitter } from './EventEmitter.js';
 
-export class TodoList {
+export class TodoList extends EventEmitter {
 
     constructor(listEl) {
+        super();
         this._listEl = listEl;
         this._items = [];
         this._load();
@@ -26,6 +28,7 @@ export class TodoList {
     _save() {
         const data = JSON.stringify(this._items.map(item => item.todo));
         window.localStorage.setItem('todo_list', data);
+        this._emit('save');
     }
 
     _createTodoListItem(todo) {

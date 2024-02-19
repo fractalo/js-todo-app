@@ -81,6 +81,32 @@ header {
     padding: 0 1rem;
 }
 
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.indicators {
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+.indicator {
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.indicator-active {
+    opacity: 1;
+    transition: opacity 150ms;
+}
+
+#indicator-done {
+    color: #00ee00;
+}
+
 .todo-list-actions {
     display: flex;
     gap: 0.5rem;
