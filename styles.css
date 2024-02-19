@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Pretendard;
+}
+
+body {
+	background-color: lightslategray;
+	color: #fff;
+}
+
+button {
+    color: inherit;
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    --btn-height: 3rem;
+    height: var(--btn-height);
+    gap: 0.25rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: rgb(47, 79, 79);
+}
+
+.btn-primary:hover {
+    background-color: rgb(40, 67, 67);
+}
+
+.btn-primary:active {
+    background-color: rgb(35, 59, 59);
+}
+
+.btn-sm {
+    --btn-height: 2rem;
+    font-size: 0.875rem;
+    padding: 0 0.75rem;
+}
+
+.btn-circle {
+    width: var(--btn-height);
+    padding: 0;
+    border-radius: 50%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding: 0 1rem;
+}
+
+#create-todo-btn {
+    font-size: 1.125rem;
+}
+
+main {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	padding: 2rem 1.5rem;
+}
